@@ -1,0 +1,6 @@
+PS C:\xampp\htdocs\ek7.4>
+php artisan make:model Todo -mcr
+php artisan make:model Todo -m
+Model created successfully.
+Created Migration: 2021_09_21_031938_create_todos_table
+Controller created successfully.
