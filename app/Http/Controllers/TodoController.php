@@ -37,6 +37,7 @@ class TodoController extends Controller
     {
         $res = new Todo;
         $res->name=$request->input('name');
+        $res->price=$request->input('price');
         $res->save();
         $request->session()->flash('msg','Data submitted');
         return redirect('todo_show');
@@ -67,6 +68,7 @@ class TodoController extends Controller
      * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
+
     public function edit(Todo $todo, $id)
     {
         return view('todo_edit')->with('todoArr', Todo::find($id));

@@ -17,7 +17,8 @@ class CreateTodosTable extends Migration
             $table->id();
             $table->string('name');
             $table->tinyInteger('deleted')->default('0');
-            $table->tinyInteger('count')->default('0');
+            $table->tinyInteger('quantity')->default('1');
+            $table->float('price')->default('0.00');
             $table->timestamps();
         });
     }

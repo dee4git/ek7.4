@@ -10,6 +10,9 @@
             <tr>
             <td>ID</td>
             <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Net Price</td>
             <td>Create at</td>
             <td>Action</td>
             <td>Action</td>
@@ -18,6 +21,9 @@
             <tr>
                 <td>{{$todo->id}}</td>
                 <td>{{$todo->name}}</td>
+                <td>{{$todo->price}}</td>
+                <td>{{$todo->quantity}}</td>
+                <td>{{$todo->price}}</td>
                 <td>{{$todo->created_at}}</td>
                 <td><a href="todo_delete/{{$todo->id}}"> Delete</a></td>
                 <td><a href="todo_edit/{{$todo->id}}"> Edit</a></td>
@@ -25,8 +31,10 @@
             </tr>
         @endforeach
         </table>
+        <br>
+        <h3 align="center">Deleted</h3>
+        <br>
         <table class="table table-striped">
-            <td>Deleted</td>
             <tr>
                 <td>ID</td>
                 <td>Name</td>

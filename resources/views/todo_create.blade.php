@@ -8,6 +8,8 @@
                 <tr>
                     <td>Name</td>
                     <td><input type="textname" name="name" required/></td>
+                    <td>Price</td>
+                    <td><input type="textname" name="price" required/></td>
                     <td><input type="submit" name="Submit"/></td>
                 </tr>
 
